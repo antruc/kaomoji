@@ -1,0 +1,27 @@
+@keyframes slide-top-toast {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.container-toast {
+  display: flex;
+  justify-content: center;
+}
+.toast {
+  width: 230px;
+  height: 53px;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  position: fixed;
+  z-index: 6;
+  bottom: 120px;
+  padding: 15px 15px 15px 25px;
+  animation: slide-top-toast 0.5s;
+}

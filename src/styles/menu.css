@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  box-shadow:
+    0 -1px 3px rgba(0, 0, 0, 0.12),
+    0 -1px 2px rgba(0, 0, 0, 0.12);
+}
+.button-menu {
+  width: 20%;
+  height: 50px;
+  background-size: 30px;
+  float: left;
+}
+.icon-happy {
+  background-image: url('./img/icon-happy.svg');
+}
+.icon-sad {
+  background-image: url('./img/icon-sad.svg');
+}
+.icon-love {
+  background-image: url('./img/icon-love.svg');
+}
+.icon-hate {
+  background-image: url('./img/icon-hate.svg');
+}
+.icon-pets {
+  background-image: url('./img/icon-pets.svg');
+}

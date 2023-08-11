@@ -1,0 +1,13 @@
+# Ignore artifacts:
+dist
+www
+public
+
+# Ignore all HTML files:
+**/*.html
+
+# Ignore eslintrc file:
+.eslintrc.cjs
+
+# Ignore esbuild.js file:
+esbuild.js

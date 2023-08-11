@@ -1,0 +1,12 @@
+@media only screen and (min-device-width: 1012px) {
+  .button {
+    cursor: pointer;
+  }
+}
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
