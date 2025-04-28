@@ -4,4 +4,10 @@
 
 Copy kaomoji to clipboard
 
-Web app: https://antruc.github.io/kaomoji
+# Build
+```
+npm install
+npm run build
+```
+
+Web app: https://antruc.dev/kaomoji
