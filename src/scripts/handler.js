@@ -2,7 +2,7 @@ import copyToClipboard from './copyToClipboard.js'
 import toast from './toast.js'
 import menu from './menu.js'
 
-export default function handler() {
+export default function handler(event) {
   let dataCopy = event.target.dataset.copy
   let dataMenu = event.target.dataset.menu
   if (dataCopy) {
