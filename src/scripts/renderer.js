@@ -1,3 +1,4 @@
+// Convert a list of strings into HTML
 export function html(strings, ...values) {
   let str = ''
   strings.forEach((string, i) => {
