@@ -7,7 +7,7 @@ public
 **/*.html
 
 # Ignore eslintrc file:
-.eslintrc.cjs
+eslint.config.mjs
 
 # Ignore esbuild.js file:
 esbuild.js
