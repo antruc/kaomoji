@@ -9,8 +9,7 @@ function app() {
   onEvent('click', handler)
   cards.create()
   menu.create()
-  let happyElm = document.getElementById('happy')
-  happyElm.classList.add('is-visible')
+  document.getElementById('happy').classList.add('is-visible')
 }
 
 onEvent('DOMContentLoaded', app)

@@ -15,20 +15,18 @@ const menu = {
     ></button>`
   },
   create() {
-    let root = document.querySelector('#app')
-    render(this.footer(), root)
-    let footerElm = document.querySelector('footer')
+    render(this.footer(), document.querySelector('#app'))
+    const footerElm = document.querySelector('footer')
+    // Loop through all keys of the kaomoji object and render a button for each
     Object.keys(kaomoji).forEach((i) => render(this.button(i), footerElm))
   },
   goTo(id) {
-    let sections = document.querySelectorAll('.section-app')
-    sections.forEach((i) => {
+    document.querySelectorAll('.section-app').forEach((i) => {
       if (i.classList.contains(this.isVisible)) {
         i.classList.remove(this.isVisible)
       }
     })
-    let sectionElm = document.querySelector(`#${id}`)
-    sectionElm.classList.add(this.isVisible)
+    document.querySelector(`#${id}`).classList.add(this.isVisible)
     window.scrollTo(0, 0)
   }
 }

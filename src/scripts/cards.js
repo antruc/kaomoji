@@ -4,6 +4,7 @@ import { html, render } from './renderer.js'
 import kaomoji from './kaomoji.js'
 
 const cards = {
+  root: document.querySelector('#app'),
   container(name) {
     return html`<section id="${name}" class="section-app">
       <ul class="cardbox"></ul>
@@ -18,13 +19,14 @@ const cards = {
     </li>`
   },
   create() {
-    let root = document.querySelector('#app')
+    // Loop through each entry in the kaomoji object
     Object.entries(kaomoji).forEach(([key, value]) => {
-      render(this.container(key), root)
-      let containerElm = document.querySelector(`#${key} ul`)
-      value.forEach((i) => {
-        render(this.card(i), containerElm)
-      })
+      // Render a section container for the current category (key) in the root element
+      render(this.container(key), this.root)
+      // Loop through all kaomoji in this category and render them as cards
+      value.forEach((i) =>
+        render(this.card(i), document.querySelector(`#${key} ul`))
+      )
     })
   }
 }

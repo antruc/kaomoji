@@ -8,12 +8,8 @@ const toast = {
     </div>`
   },
   show(text) {
-    let root = document.querySelector('#app')
-    render(this.template(text), root)
-    setTimeout(() => {
-      let toastElm = document.querySelector('.container-toast')
-      toastElm.remove()
-    }, 1500)
+    render(this.template(text), document.querySelector('#app'))
+    setTimeout(() => document.querySelector('.container-toast').remove(), 1500)
   }
 }
 
