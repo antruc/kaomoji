@@ -6,6 +6,7 @@ import open from 'open'
 process.env.NODE_ENV = process.argv[2] // eslint-disable-line
 
 async function copyAndWrite(outdir, outfile) {
+  await fs.emptyDir(outdir)
   await fs.copy('public', outdir)
 
   const html = await fs.readFile(`${outdir}/index.html`, 'utf8')
