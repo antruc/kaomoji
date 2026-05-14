@@ -5,9 +5,3 @@ public
 
 # Ignore all HTML files:
 **/*.html
-
-# Ignore eslintrc file:
-eslint.config.mjs
-
-# Ignore esbuild.js file:
-esbuild.js
