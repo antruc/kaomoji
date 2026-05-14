@@ -6,13 +6,12 @@
   "scripts": {
     "prettier": "npx prettier src --check",
     "lint": "npx eslint src",
-    "format": "npm run prettier -- --write && npm run lint -- --fix",
+    "format": "npm run lint -- --fix && npm run prettier -- --write",
     "build": "node esbuild.js",
     "dev": "node esbuild.js development",
-    "test": "npm run prettier && npm run lint"
+    "test": "npm run lint && npm run prettier"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.25.1",
     "esbuild": "^0.25.3",
     "eslint": "^9.25.1",
