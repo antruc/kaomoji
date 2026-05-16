@@ -3,7 +3,7 @@ import { parse } from 'node-html-parser'
 import * as esbuild from 'esbuild'
 import open from 'open'
 
-process.env.NODE_ENV = process.argv[2] // eslint-disable-line
+process.env.NODE_ENV = process.argv[2]
 
 async function copyAndWrite(outdir, outfile) {
   await fs.emptyDir(outdir)
@@ -30,7 +30,7 @@ async function copyAndWrite(outdir, outfile) {
   await fs.writeFile(`${outdir}/index.html`, index)
 }
 
-if (process.env.NODE_ENV === 'development') { // eslint-disable-line
+if (process.env.NODE_ENV === 'development') {
   copyAndWrite('www', '')
 
   let ctx = await esbuild.context({
