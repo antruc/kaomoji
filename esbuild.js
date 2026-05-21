@@ -36,8 +36,9 @@ if (process.env.NODE_ENV === 'development') {
   let ctx = await esbuild.context({
     entryPoints: ['src/app.js'],
     bundle: true,
-    target: ['es6'],
+    target: ['es2020'],
     external: ['*.svg'],
+    loader: { '.woff2': 'copy' },
     define: { 'window.IS_DEVELOPMENT': 'true' },
     outdir: 'www'
   })
@@ -58,8 +59,9 @@ if (process.env.NODE_ENV === 'development') {
     entryPoints: ['src/app.js'],
     bundle: true,
     minify: true,
-    target: ['es6'],
+    target: ['es2020'],
     external: ['*.svg'],
+    loader: { '.woff2': 'copy' },
     define: { 'window.IS_DEVELOPMENT': 'false' },
     outfile: 'dist/app.min.js'
   })
