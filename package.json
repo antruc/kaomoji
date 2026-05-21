@@ -1,6 +1,6 @@
 {
   "name": "kaomoji",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "private": true,
   "scripts": {
@@ -10,6 +10,9 @@
     "build": "node esbuild.js",
     "dev": "node esbuild.js development",
     "test": "npm run lint && npm run prettier"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
