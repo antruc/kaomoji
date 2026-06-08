@@ -1,5 +1,5 @@
-import '../styles/cards.css'
-import '../styles/button.css'
+import '../css/cards.css'
+import '../css/button.css'
 import { html, render } from './renderer.js'
 import kaomoji from './kaomoji.js'
 

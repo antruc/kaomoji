@@ -1,4 +1,4 @@
-import '../styles/toast.css'
+import '../css/toast.css'
 import { html, render } from './renderer.js'
 
 const toast = {
