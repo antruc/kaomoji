@@ -8,11 +8,11 @@ import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt'
 import PetsIcon from '@mui/icons-material/Pets'
 
 const icons = {
-  happy: <MoodIcon fontSize="medium" />,
-  sad: <SentimentVeryDissatisfiedIcon fontSize="medium" />,
-  love: <FavoriteBorderIcon fontSize="medium" />,
-  hate: <ThumbDownOffAltIcon fontSize="medium" />,
-  pets: <PetsIcon fontSize="medium" />
+  happy: <MoodIcon fontSize="large" />,
+  sad: <SentimentVeryDissatisfiedIcon fontSize="large" />,
+  love: <FavoriteBorderIcon fontSize="large" />,
+  hate: <ThumbDownOffAltIcon fontSize="large" />,
+  pets: <PetsIcon fontSize="large" />
 }
 
 export default function Menu({ items, active, onSelect }) {
@@ -23,7 +23,17 @@ export default function Menu({ items, active, onSelect }) {
     >
       <BottomNavigation value={active} onChange={(e, value) => onSelect(value)}>
         {items.map((name) => (
-          <BottomNavigationAction key={name} value={name} icon={icons[name]} />
+          <BottomNavigationAction
+            key={name}
+            value={name}
+            icon={icons[name]}
+            sx={{
+              flex: '1 1 0',
+              minWidth: 0,
+              maxWidth: 'none',
+              padding: 0
+            }}
+          />
         ))}
       </BottomNavigation>
     </Paper>
