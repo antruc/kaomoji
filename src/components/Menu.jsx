@@ -8,11 +8,11 @@ import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt'
 import PetsIcon from '@mui/icons-material/Pets'
 
 const icons = {
-  happy: <MoodIcon fontSize="large" />,
-  sad: <SentimentVeryDissatisfiedIcon fontSize="large" />,
-  love: <FavoriteBorderIcon fontSize="large" />,
-  hate: <ThumbDownOffAltIcon fontSize="large" />,
-  pets: <PetsIcon fontSize="large" />
+  happy: <MoodIcon fontSize="medium" />,
+  sad: <SentimentVeryDissatisfiedIcon fontSize="medium" />,
+  love: <FavoriteBorderIcon fontSize="medium" />,
+  hate: <ThumbDownOffAltIcon fontSize="medium" />,
+  pets: <PetsIcon fontSize="medium" />
 }
 
 export default function Menu({ items, active, onSelect }) {
