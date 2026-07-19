@@ -1,29 +1,40 @@
 {
   "name": "kaomoji",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "type": "module",
   "private": true,
   "scripts": {
-    "prettier": "npx prettier src --check",
-    "lint": "npx eslint src",
-    "format": "npm run lint -- --fix && npm run prettier -- --write",
-    "build": "node esbuild.js",
-    "dev": "node esbuild.js development",
-    "test": "npm run lint && npm run prettier"
+    "prettier": "bunx prettier src --check",
+    "lint": "bunx eslint src",
+    "format": "bun run lint -- --fix && bun run prettier -- --write",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "bunx vitest run",
+    "test:watch": "bunx vitest"
   },
   "dependencies": {
-    "@fontsource-variable/roboto": "^5.2.10"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource-variable/roboto": "^5.3.0",
+    "@mui/icons-material": "^9.2.0",
+    "@mui/material": "^9.2.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@eslint/js": "^9.25.1",
-    "esbuild": "^0.25.3",
-    "eslint": "^9.25.1",
-    "eslint-config-prettier": "^10.1.2",
-    "fs-extra": "^11.3.0",
-    "globals": "^16.0.0",
-    "node-html-parser": "^7.0.1",
-    "open": "^10.1.1",
-    "prettier": "^3.5.3"
+    "@eslint/js": "^9.39.5",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.7.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.9.5",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
   },
   "license": "GPL-3.0-only"
 }
