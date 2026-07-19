@@ -13,7 +13,7 @@ export default function Cards({ items, onCopy }) {
         justifyContent: 'center',
         listStyle: 'none',
         p: 0,
-        maxWidth: 1062,
+        maxWidth: 1152,
         m: '20px auto 75px'
       }}
     >
@@ -22,7 +22,7 @@ export default function Cards({ items, onCopy }) {
           key={text}
           component="li"
           sx={{
-            width: 320,
+            width: 350,
             m: '17px',
             fontSize: 22,
             p: '10px 15px',
