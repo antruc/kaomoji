@@ -44,7 +44,7 @@ export default function App() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} defaultMode="system">
       <CssBaseline />
       <Cards items={kaomoji[active]} onCopy={copy} />
       <Menu items={Object.keys(kaomoji)} active={active} onSelect={goTo} />
