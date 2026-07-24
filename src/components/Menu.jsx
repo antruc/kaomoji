@@ -26,6 +26,7 @@ export default function Menu({ items, active, onSelect }) {
           <BottomNavigationAction
             key={name}
             value={name}
+            aria-label={name}
             icon={icons[name]}
             sx={{
               flex: '1 1 0',
